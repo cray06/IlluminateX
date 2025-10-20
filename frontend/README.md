@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IlluminateX — Frontend Prototype README ✨
 
-## Getting Started
+**Client Project:** This README documents a frontend prototype built for a client 🧑‍💼.
 
-First, run the development server:
+## Project Overview 🌐
+IlluminateX is a Web3-inspired, faith-based digital ecosystem to showcase gospel creatives. This repository contains the frontend prototype focusing on UI/UX, discovery, and user interactions 🎨🎵.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Vision 🙏
+Create an intuitive frontend where Christian creatives can present work, audiences can engage, and token concepts are demonstrated through UI flows 💡.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Frontend Scope 🧩
+- Creator profiles and media galleries (audio, video, images) 🧑‍🎤📷🎧
+- Feed with trending and recommended content 🔥📣
+- Interaction UI: like, share, comment, tip (UI-only demo) ❤️🔁💬💎
+- Wallet UI integration and demo flows (MetaMask, WalletConnect) without on-chain logic 🔗🔐
+- Upload flows with mocked storage/API calls 📤🗂️
+- Admin/moderation UI prototypes (client-controlled) 🛠️
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack (frontend-focused) ⚙️
+- Next.js (app router), React, TypeScript
+- Tailwind CSS or CSS modules
+- UI components library (optional: Headless UI / Radix)
+- Local mocks / API stubs for backend and token flows
+- Optional: IPFS UI hooks (no direct on-chain integration) 🛰️
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prototype Goals 🎯
+- Validate UX for onboarding, content upload, feed interactions, and wallet connection UI ✅
+- Provide reusable React components and page flows for handoff to backend or smart contract teams 🔁
+- Keep all crypto/token behaviour mocked or simulated for frontend testing 🧪
 
-## Learn More
+## Getting Started 🚀
+1. Clone the client repo.
+2. Install dependencies: `npm install` or `pnpm install`.
+3. Run local dev server: `npm run dev`.
+4. Open `http://localhost:3000` and edit `app/page.tsx` to start 🖥️.
+5. Configure environment variables (frontend-only):
+    - `NEXT_PUBLIC_API_URL` \- for mocked API endpoints
+    - `NEXT_PUBLIC_RPC_URL` \- optional for wallet UI demos 🔧
 
-To learn more about Next.js, take a look at the following resources:
+## Notes ⚠️
+- This repo is frontend-only. Any on-chain, backend, KYC, or production payment work is out of scope and should be handled by the client or a dedicated backend/smart contract team.
+- Token and staking features are represented as UI mocks for demo purposes 🧾.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing 🤝
+Follow client guidelines. For frontend fixes or UI improvements, open an issue or submit a PR to the client repository.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License 📜
+License to be determined by client.
