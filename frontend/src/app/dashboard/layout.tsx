@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import {JSX, ReactNode} from 'react';
 import { ThemeProvider } from '@/context/ThemeContext';
 import Sidebar from '@/component/dashboard/sidebar/Sidebar';
 import DashboardNavbar from '@/component/dashboard/navbar/DashboardNavbar';
@@ -9,7 +9,7 @@ interface DashboardLayoutProps {
   children: ReactNode;
 }
 
-export default function DashboardLayout({ children }: DashboardLayoutProps): React.JSX.Element {
+export default function DashboardLayout({ children }: DashboardLayoutProps): JSX.Element {
   return (
     <ThemeProvider>
       <div className="h-screen bg-gradient-to-b from-[#36013F] to-black">

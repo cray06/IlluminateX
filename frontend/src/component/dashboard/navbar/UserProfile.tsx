@@ -2,6 +2,7 @@
 
 import { Bell, Camera } from 'lucide-react';
 import { mockUser } from '@/data/mockData';
+import Image from 'next/image';
 
 export default function UserProfile(): React.JSX.Element {
   return (
@@ -23,7 +24,15 @@ export default function UserProfile(): React.JSX.Element {
       </div>
 
       <div className="flex items-center space-x-2">
-        <div className="w-6 h-6 bg-gradient-to-tr from-green-500 to-purple-700 rounded-full"></div>
+        <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-r from-purple-600 to-purple-800">
+          <Image
+            src={mockUser.avatar}
+            alt={mockUser.name}
+            width={32}
+            height={32}
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );

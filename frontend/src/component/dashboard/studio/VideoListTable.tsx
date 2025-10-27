@@ -27,7 +27,7 @@ export default function VideoListTable({ videos }: VideoListTableProps): React.J
           >
             <div className="flex items-start space-x-3">
               <div className="relative w-24 h-16 bg-gray-700 rounded-lg flex-shrink-0 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-purple-600 to-blue-600"></div>
+                <div className="w-full h-full bg-gradient-to-r from-purple-600 to-purple-800"></div>
                 <div className="absolute bottom-1 right-1 bg-black bg-opacity-75 text-white text-xs px-1 py-0.5 rounded">
                   {video.duration}
                 </div>

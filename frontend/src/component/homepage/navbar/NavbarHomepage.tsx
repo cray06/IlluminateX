@@ -37,7 +37,7 @@ export default function NavbarHomepage(): JSX.Element {
 
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-green-500 to-purple-700 ring-2 ring-[#36013F]" />
+            <div className="w-9 h-9 rounded-full bg-gradient-to-r from-purple-600 to-purple-800 ring-2 ring-[#36013F]" />
             <div className="text-right">
               <div className="text-sm text-gray-100">Guest</div>
               <div className="text-xs text-gray-400">Welcome</div>

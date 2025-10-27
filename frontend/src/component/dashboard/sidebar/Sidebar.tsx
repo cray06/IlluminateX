@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import SidebarItem from './SidebarItem';
 import ThemeToggle from './ThemeToggle';
 import { mockUser } from '@/data/mockData';
@@ -49,16 +50,25 @@ export default function Sidebar(): React.JSX.Element {
 
   return (
     <div className="w-56 h-screen bg-gradient-to-b from-[#36013F] to-black flex flex-col">
-      <div className="p-[1.06rem] border-b border-gray-700">
+      <div className="p-[1.06rem]">
         <div className="text-white font-bold text-lg">IlluminateX</div>
       </div>
       
-      <div className="p-3 border-b border-gray-700">
-        <div className="text-white font-medium text-sm">{mockUser.name}</div>
-        <div className="text-gray-400 text-xs">{mockUser.studio}</div>
+      <div className="p-4 flex flex-col items-center">
+        <div className="w-16 h-16 rounded-full overflow-hidden mb-3">
+          <Image
+            src="/homepage/homepage_sphere.jpg"
+            alt={mockUser.name}
+            width={64}
+            height={64}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="text-white font-medium text-sm text-center">{mockUser.name}</div>
+        <div className="text-gray-400 text-xs text-center">{mockUser.studio}</div>
       </div>
 
-      <div className="flex-1 p-3 space-y-1">
+      <div className="flex-1 p-3 space-y-2">
         {menuItems.map((item, index) => (
           <SidebarItem
             key={index}
@@ -70,7 +80,7 @@ export default function Sidebar(): React.JSX.Element {
         ))}
       </div>
 
-      <div className="mt-auto p-3 space-y-1">
+      <div className="mt-auto p-3 space-y-2">
         {bottomItems.map((item, index) => (
           <SidebarItem
             key={index}

@@ -1,5 +1,5 @@
 import { Eye, Clock, Users, DollarSign, Music, Heart, Sun } from 'lucide-react';
-import { Video, StatCard, ChartData, Playlist, ActivityItem, User, StudioVideo } from '@/types/dashboard';
+import { Video, StatCard, ChartData, Playlist, ActivityItem, User, StudioVideo, ChatContact, ChatMessage } from '@/types/dashboard';
 
 export const mockUser: User = {
   name: 'David David',
@@ -312,3 +312,106 @@ export const mockStudioVideos: StudioVideo[] = [
     thumbnail: '/api/placeholder/120/80'
   }
 ];
+
+export const mockChatContacts: ChatContact[] = [
+  {
+    id: '1',
+    username: '@jdan',
+    avatar: '/api/placeholder/40/40',
+    lastMessage: 'Good Morning please is there going to be rehearsal today?',
+    timestamp: '2m ago',
+    isOnline: true,
+    unreadCount: 2
+  },
+  {
+    id: '2',
+    username: '@davdiv',
+    avatar: '/api/placeholder/40/40',
+    lastMessage: 'I just bought a new drum set and i want you to come let\'s do something...',
+    timestamp: '15m ago',
+    isOnline: true
+  },
+  {
+    id: '3',
+    username: '@tosinstrings',
+    avatar: '/api/placeholder/40/40',
+    lastMessage: 'What effect did you use for that video?',
+    timestamp: '1h ago',
+    isOnline: false
+  },
+  {
+    id: '4',
+    username: '@gracedd',
+    avatar: '/api/placeholder/40/40',
+    lastMessage: 'Thank you for the wonderful performance!',
+    timestamp: '3h ago',
+    isOnline: true
+  },
+  {
+    id: '5',
+    username: '@josephdzn',
+    avatar: '/api/placeholder/40/40',
+    lastMessage: 'Can we collaborate on a new project?',
+    timestamp: '5h ago',
+    isOnline: false
+  },
+  {
+    id: '6',
+    username: '@onemore',
+    avatar: '/api/placeholder/40/40',
+    lastMessage: 'Amazing work on that last video!',
+    timestamp: '1d ago',
+    isOnline: false
+  }
+];
+
+export const mockChatMessages: Record<string, ChatMessage[]> = {
+  '1': [
+    {
+      id: '1',
+      senderId: '1',
+      content: 'Good morning bro how are you doing?',
+      timestamp: '11:58 AM',
+      isOwn: false
+    },
+    {
+      id: '2',
+      senderId: 'me',
+      content: 'I just bought a new drum set and i want you to come let\'s do something together, i belive it will be an amazing experience.',
+      timestamp: '12:00 PM',
+      isOwn: true
+    }
+  ],
+  '2': [
+    {
+      id: '1',
+      senderId: '2',
+      content: 'Hey! I saw your latest video',
+      timestamp: '10:30 AM',
+      isOwn: false
+    },
+    {
+      id: '2',
+      senderId: 'me',
+      content: 'Thanks! Glad you liked it',
+      timestamp: '10:35 AM',
+      isOwn: true
+    },
+    {
+      id: '3',
+      senderId: '2',
+      content: 'I just bought a new drum set and i want you to come let\'s do something...',
+      timestamp: '10:45 AM',
+      isOwn: false
+    }
+  ],
+  '3': [
+    {
+      id: '1',
+      senderId: '3',
+      content: 'What effect did you use for that video?',
+      timestamp: '9:15 AM',
+      isOwn: false
+    }
+  ]
+};

@@ -5,8 +5,9 @@ import ChannelViewsBanner from '@/component/dashboard/studio/ChannelViewsBanner'
 import VideoListTable from '@/component/dashboard/studio/VideoListTable';
 import RightSidebar from '@/component/dashboard/sidebar-right/RightSidebar';
 import { mockStudioVideos } from '@/data/mockData';
+import {JSX} from "react";
 
-export default function MyStudioPage(): React.JSX.Element {
+export default function MyStudioPage(): JSX.Element {
   return (
     <div className="h-full flex space-x-4">
       <div className="flex-1 flex flex-col space-y-4 h-full overflow-y-auto hide-scrollbar">

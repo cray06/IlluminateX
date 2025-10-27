@@ -4,8 +4,9 @@ import LastActivity from '@/component/dashboard/activity/LastActivity';
 import CreativityOverview from '@/component/dashboard/analytics/CreativityOverview';
 import PlaylistSection from '@/component/dashboard/playlist/PlaylistSection';
 import RightSidebar from '@/component/dashboard/sidebar-right/RightSidebar';
+import React, {JSX} from "react";
 
-export default function DashboardPage(): React.JSX.Element {
+export default function DashboardPage(): JSX.Element {
   return (
     <div className="h-full flex space-x-4">
       <div className="flex-1 flex flex-col space-y-4 h-full overflow-y-auto hide-scrollbar">

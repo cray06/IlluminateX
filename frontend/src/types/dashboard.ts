@@ -73,3 +73,21 @@ export interface StudioVideo {
   lastViewed: string;
   thumbnail: string;
 }
+
+export interface ChatMessage {
+  id: string;
+  senderId: string;
+  content: string;
+  timestamp: string;
+  isOwn: boolean;
+}
+
+export interface ChatContact {
+  id: string;
+  username: string;
+  avatar: string;
+  lastMessage: string;
+  timestamp: string;
+  isOnline: boolean;
+  unreadCount?: number;
+}
